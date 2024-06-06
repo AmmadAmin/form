@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Tamlete</title>
+    <style>
+      body {
+        color: azure;
+        background-color: rgb(0, 0, 0);
+        padding-left: 42px;
+      }
+      .input-container {
+        gap: 10px; /* Adjust the gap between the input fields */
+      }
+
+      input{
+        height: 25px;
+        border-radius: 10px;
+      }
+      textarea{
+        border-radius: 10px;
+      }
+      button{
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+
+      }
+
+      input[type=range] {
+        width: 50%; /* Set the width to 100% */
+    }
+    button{
+        margin-left: 40%;
+    }
+
+    
+    
+    
+
+ 
+    </style>
+  </head>
+  <body>
+    <head>
+      <img src="logo.png" alt="bacgroun img" class="center" />
+      <h1>On-site Inquiries</h1>
+    </head>
+    <main>
+      <label for="username">
+        <span>Name *</span> <br />
+        <input type="text" id="username" size="90" />
+      </label>
+      <br />
+      <br />
+
+      <label for="longline">
+        <span>Where are you? *</span> <br />
+        <input type="text" id="longline" size="90px" maxlength="90" /> <br />
+        <span>Steet Addres</span>
+      </label>
+      <br />
+      <br />
+      <input type="text" id="longline" size="90px" maxlength="90" /> <br />
+      Adress Line 2
+
+      <br />
+      <br />
+
+      <span class="input-container">
+        <input type="text" size="40" id="input1" placeholder="Input 1" />
+        <input type="text" size="40" id="input2" placeholder="Input 2" /> <br />
+        City
+      </span> <br>
+      <span class="input-container">
+        <input type="text" size="40" id="input1" placeholder="Input 1" />
+        <input type="text" size="40" id="input2" placeholder=" selcet" />
+         <br />
+        Postal / Zip Code
+      </span> <br> <br>
+
+      <label for="volume">What's the progress status? </label> <br> <br>
+      <input type="range" id="volume" name="volume" min="0" max="100">
+
+<br>
+      <label for="radio">Do you need any more materials? *</label> <br>
+      <input type="radio" id="radio" name="radio"> Yes <br>
+      <input type="radio" id="radio" name="radio">  No
+<br>
+<br>
+<br>
+      <label for="">What more do you need? <br>
+      <input type="checkbox">Sand <br>
+      <input type="checkbox"> Bricks<br>
+      <input type="checkbox">Rods <br>
+      <input type="checkbox">others <br>
+    </label>
+    <br>
+    <br>
+    <label for="">Any other comments?</label> <br>
+    <textarea name="" id="" cols="110" rows="5"></textarea>
+    </main> <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+            <button type="submit">Submit</button>
+         
+    </footer>
+
+  </body>
+</html>
